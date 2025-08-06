@@ -11,45 +11,53 @@
 
 <body>
 
-  <nav class="navbar navbar-light bg-white border-bottom shadow-sm">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom shadow-sm">
     <div class="container-fluid">
-      <div class="d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="#">
         <i class="fa-brands fa-instagram me-2"></i>
         <span class="h5 m-0">Instagram</span>
-      </div>
-      <div class="d-flex align-items-center flex-wrap gap-2">
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newPhotoModal">+ Nueva foto</button>
-        <div class="dropdown flex-shrink-0">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            <i class="fa-solid fa-gear"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configuración</a></li>
-            <li><a class="dropdown-item" href="#">Privacidad</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
-          </ul>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <div class="d-flex align-items-center flex-wrap gap-2">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newPhotoModal">+ Nueva foto</button>
+          <div class="dropdown flex-shrink-0">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Configuración</a></li>
+              <li><a class="dropdown-item" href="#">Privacidad</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </nav>
 
+  <!-- FEED -->
   <div class="container mt-4">
     <ul class="nav nav-tabs mb-3 justify-content-center" id="feedTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="cards-tab" data-bs-toggle="tab" data-bs-target="#cards" type="button"
-          role="tab"><i class="fa-solid fa-table-cells"></i></button>
+        <button class="nav-link active" id="cards-tab" data-bs-toggle="tab" data-bs-target="#cards" type="button" role="tab">
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab"><i
-            class="fa-solid fa-grip"></i></button>
+        <button class="nav-link" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab">
+          <i class="fa-solid fa-grip"></i>
+        </button>
       </li>
     </ul>
 
     <div class="tab-content" id="feedTabContent">
+      <!-- TAB: Cards -->
       <div class="tab-pane fade show active" id="cards" role="tabpanel">
         <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6">
@@ -95,44 +103,39 @@
         </div>
       </div>
 
+      <!-- TAB: Grid -->
       <div class="tab-pane fade" id="grid" role="tabpanel">
         <div class="row g-2">
-          <div class="col-6 col-md-4">
-            <img src="https://picsum.photos/300?random=1" class="img-fluid grid-img" alt="Grid 1"
-              style="aspect-ratio: 1/1; object-fit: cover;">
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://picsum.photos/300?random=1" class="img-fluid grid-img mx-auto d-block" alt="Grid 1" style="aspect-ratio: 1/1; object-fit: cover;">
           </div>
-          <div class="col-6 col-md-4">
-            <img src="https://picsum.photos/300?random=2" class="img-fluid grid-img" alt="Grid 2"
-              style="aspect-ratio: 1/1; object-fit: cover;">
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://picsum.photos/300?random=2" class="img-fluid grid-img mx-auto d-block" alt="Grid 2" style="aspect-ratio: 1/1; object-fit: cover;">
           </div>
-          <div class="col-6 col-md-4">
-            <img src="https://picsum.photos/300?random=3" class="img-fluid grid-img" alt="Grid 3"
-              style="aspect-ratio: 1/1; object-fit: cover;">
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://picsum.photos/300?random=3" class="img-fluid grid-img mx-auto d-block" alt="Grid 3" style="aspect-ratio: 1/1; object-fit: cover;">
           </div>
-          <div class="col-6 col-md-4">
-            <img src="https://picsum.photos/300?random=4" class="img-fluid grid-img" alt="Grid 4"
-              style="aspect-ratio: 1/1; object-fit: cover;">
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://picsum.photos/300?random=4" class="img-fluid grid-img mx-auto d-block" alt="Grid 4" style="aspect-ratio: 1/1; object-fit: cover;">
           </div>
-          <div class="col-6 col-md-4">
-            <img src="https://picsum.photos/300?random=5" class="img-fluid grid-img" alt="Grid 5"
-              style="aspect-ratio: 1/1; object-fit: cover;">
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://picsum.photos/300?random=5" class="img-fluid grid-img mx-auto d-block" alt="Grid 5" style="aspect-ratio: 1/1; object-fit: cover;">
           </div>
-          <div class="col-6 col-md-4">
-            <img src="https://picsum.photos/300?random=6" class="img-fluid grid-img" alt="Grid 6"
-              style="aspect-ratio: 1/1; object-fit: cover;">
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://picsum.photos/300?random=6" class="img-fluid grid-img mx-auto d-block" alt="Grid 6" style="aspect-ratio: 1/1; object-fit: cover;">
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal para Nueva Foto -->
+  <!-- MODAL Nueva Foto -->
   <div class="modal fade" id="newPhotoModal" tabindex="-1" aria-labelledby="newPhotoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="newPhotoModalLabel">Subir nueva foto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
           <form>
@@ -142,8 +145,7 @@
             </div>
             <div class="mb-3">
               <label for="photoDescription" class="form-label">Descripción</label>
-              <textarea class="form-control" id="photoDescription" rows="3"
-                placeholder="Escribe una descripción..."></textarea>
+              <textarea class="form-control" id="photoDescription" rows="3" placeholder="Escribe una descripción..."></textarea>
             </div>
             <div class="mb-3">
               <label for="photoLocation" class="form-label">Ubicación (opcional)</label>
